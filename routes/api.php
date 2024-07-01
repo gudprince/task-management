@@ -18,6 +18,6 @@ Route::prefix('v1')->group(function () {
 });
 
 Route::get('/authenticated/json', function () {
-    return response()->json(['message' => 'Unauthorized'], 401);
+    return response()->json(['message' => 'Unauthorized, please login'], 401);
 })->name('api.authenticated.json');
 
